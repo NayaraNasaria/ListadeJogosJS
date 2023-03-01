@@ -1,0 +1,97 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0a0a0a;
+  background-color: rgb(235, 235, 235);
+  padding: 20px;
+  border: 1px solid #0a0a0a;
+  width: 415px;
+  border-radius: 12px;
+  z-index: 9999;
+  display: none;
+}
+
+.modal.abrir {
+  display: block !important;
+}
+
+.background-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 9998;
+  display: none;
+}
+
+.background-modal.abrir {
+  display: block !important;
+}
+
+.btn-fechar-modal {
+  position: absolute;
+  top: -25px;
+  right: -18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #0a0a0a;
+  background-color: #671294;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.frm-linha {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.frm-linha label {
+  margin-bottom: 6px;
+  color: #0a0a0a;
+}
+
+.frm-linha input {
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #0a0a0a;
+  font-size: 1rem;
+  color: black;
+}
+
+.frm-linha button {
+  background-color: #671294;
+  color: white;
+  border: 1px solid #0a0a0a;
+  padding: 7px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 68%;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.frm-linha button:hover {
+  background-color: #2a0140;
+}
+
+.frm-linha label[for="arquivo"] {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  cursor: pointer;
+  text-align: center;
+  color: #671294;
+}

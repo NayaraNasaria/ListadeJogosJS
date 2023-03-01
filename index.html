@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <title>Lista de Jogos</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <ul>
+          <!-- <li>
+            <div>
+              <img src="img/god.jpg" />
+            </div>
+            <div class="game-info">
+              <h2>God of War Ragnarok</h2>
+              <h3>R$ 300,00</h3>
+            </div>
+            <span class="icon-remove">
+              <span class="material-symbols-outlined">delete</span>
+            </span>
+          </li>
+          <li>
+            <div>
+              <img src="img/tlou.png" />
+            </div>
+            <div class="game-info">
+              <h2>The Last Of Us</h2>
+              <h3>R$ 250,00</h3>
+            </div>
+            <span class="icon-remove">
+              <span class="material-symbols-outlined">delete</span>
+            </span>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <button id="btnAdd">
+          <span class="material-symbols-outlined">add_circle</span>
+        </button>
+        <button id="btnImportar">
+          <span class="material-symbols-outlined">file_upload</span>
+        </button>
+        <button id="btnDownload">
+          <span class="material-symbols-outlined">download</span>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Primeira Modal -->
+    <div class="modal" data-modal="adicionar-jogo">
+      <button class="btn-fechar-modal">
+        <span class="material-symbols-outlined">close </span>
+      </button>
+      <form>
+        <div class="frm-linha">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" />
+        </div>
+        <div class="frm-linha">
+          <label for="img">Foto</label>
+          <input type="text" id="img" />
+        </div>
+        <div class="frm-linha">
+          <label for="preco">Preço</label>
+          <input type="number" step="0.50" id="preco" />
+        </div>
+        <div class="frm-linha">
+          <button id="btnSalvar">Salvar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Segunda Modal -->
+    <div class="modal" data-modal="upload-jogos">
+      <button class="btn-fechar-modal">
+        <span class="material-symbols-outlined">close </span>
+      </button>
+      <form>
+        <div class="frm-linha">
+          <label for="arquivo">Selecione o Arquivo</label>
+          <input type="file" style="display: none" id="arquivo" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Terceiro Modal -->
+    <div class="modal" data-modal="download-jogos">
+      <button class="btn-fechar-modal">
+        <span class="material-symbols-outlined">close </span>
+      </button>
+      <form>
+        <div class="frm-linha">
+          <label for="nomeArquivo">Nome do Arquivo</label>
+          <input type="text" id="nomeArquivo" />
+        </div>
+
+        <div class="frm-linha">
+          <button id="btnFazerDownload">Download</button>
+        </div>
+      </form>
+    </div>
+    <div class="background-modal"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
